@@ -1,0 +1,294 @@
+{
+  "_comment": "Fallback reference only. Live calls use web search.",
+  "california": {
+    "name": "California",
+    "depositLimit": "2 months rent (unfurnished), 3 months (furnished)",
+    "depositReturnDays": 21,
+    "noticeToEnterHours": 24,
+    "repairDeadlineDays": "Reasonable time — urgent repairs (heat, hot water) typically within 3 days; general repairs within 30 days",
+    "evictionNoticeDays": "3-day pay-or-quit; 30/60-day termination notice",
+    "keyProtections": [
+      "AB 1482 rent control: rent increases capped at 5% + local CPI (max 10%) for covered units",
+      "Warranty of habitability: landlord must maintain habitable conditions at all times",
+      "Repair-and-deduct: tenants can deduct repair costs (up to 1 month rent) if landlord fails to fix after notice",
+      "Retaliation protection: landlord cannot evict or raise rent in response to tenant complaints",
+      "Just-cause eviction required for covered buildings (built before 2005, or 15+ years old)"
+    ],
+    "situations": {
+      "broken_heat": "California landlords must provide heating that can maintain 70°F (68°F at night). This is a habitability requirement under Civil Code 1941.1. Send written notice immediately; landlord must repair within a reasonable time (3 days for urgent issues).",
+      "no_hot_water": "Hot water is a habitability requirement under California Civil Code 1941.1. Landlord must fix within a reasonable time after written notice. You may be entitled to rent reduction for each day without hot water.",
+      "mold": "Mold is an explicit habitability violation under California Health & Safety Code 17920.3. Document with photos, send written notice. If landlord fails to remediate, you can contact local housing authority.",
+      "deposit_dispute": "California Civil Code 1950.5: landlord must return deposit within 21 days of move-out with itemized statement. If they miss the deadline or make improper deductions, you can sue in small claims court for 2x the wrongfully withheld amount.",
+      "illegal_entry": "California Civil Code 1954: landlord must give 24 hours written notice before entry (except emergencies). Unauthorized entry can be reported to local housing authority and may justify rent withholding.",
+      "eviction_notice": "3-day notices must be for non-payment, lease violation, or illegal activity. 30/60-day termination requires just cause in covered buildings. You have the right to contest any eviction in court within the notice period.",
+      "rent_increase": "AB 1482 caps annual increases at 5% + local CPI (max 10%) for qualifying units built before 2005 or owned by large landlords. Landlord must give 30 days written notice for increases under 10%, 90 days for 10% or more. Local rent control may impose stricter limits.",
+      "retaliation": "California Civil Code 1942.5: strong anti-retaliation law. If landlord takes adverse action within 180 days of your protected activity (complaint, repair request, code enforcement call), retaliation is legally presumed. Remedies include actual damages plus up to $2,000 punitive damages per violation.",
+      "pest_infestation": "Pest infestations (roaches, mice, bedbugs) violate Civil Code 1941.1 habitability law. Landlord is responsible for pest control at move-in and for infestations caused by building conditions. Bedbug disclosure requirements apply under Civil Code 1954.603. Send written notice; landlord must remediate.",
+      "utility_shutoff": "Utility shutoffs by landlords are illegal under Civil Code 789.3 — this is self-help eviction. Landlord faces $100 per day penalty plus actual damages. Restore utilities through utility company with proof of tenancy, then file with local housing authority and pursue damages.",
+      "unsafe_conditions": "Civil Code 1941.1 lists explicit habitability requirements: waterproofing, functioning plumbing/electrical/heating, clean conditions, pest-free, working doors and windows. Send written notice. After reasonable time (3 days for emergencies), repair-and-deduct up to 1 month rent or pursue rent reduction.",
+      "housing_discrimination": "California FEHA provides broader protections than federal law, covering race, color, religion, sex, national origin, familial status, disability, source of income, sexual orientation, gender identity, marital status, and age. File with the California Civil Rights Department (calcivilrights.ca.gov) or HUD within 1 year."
+    }
+  },
+  "texas": {
+    "name": "Texas",
+    "depositLimit": "No statutory limit",
+    "depositReturnDays": 30,
+    "noticeToEnterHours": "No statutory requirement (reasonable notice recommended)",
+    "repairDeadlineDays": "7 days after written notice for conditions that materially affect health/safety",
+    "evictionNoticeDays": "3-day notice to vacate before filing eviction",
+    "keyProtections": [
+      "Texas Property Code 92.056: landlord must repair conditions affecting health/safety within 7 days of written notice",
+      "Repair-and-deduct: available after 2 written notices, up to $500 or 1 month rent",
+      "Deposit return: 30 days after move-out with itemized deductions",
+      "Retaliation protection: 6-month presumption of retaliation if landlord acts after tenant complaint",
+      "No statewide rent control — landlord-friendly state with limited tenant protections"
+    ],
+    "situations": {
+      "broken_heat": "Texas Property Code 92.056: heat is a condition that materially affects health and safety. Send written notice to landlord. They have 7 days to repair (or make diligent effort). After second notice, you may be able to repair-and-deduct (up to $500) or terminate lease.",
+      "no_hot_water": "Hot water affects health and safety under Texas Property Code 92.056. Send written notice; 7-day repair deadline applies. Keep copies of all communications. If no action, a second written notice triggers repair-and-deduct rights.",
+      "mold": "Mold affecting habitability falls under Texas Property Code 92.056 if it materially affects health/safety. Document extensively. Texas has no specific mold remediation statute — habitability law applies. Contact local health department if landlord is unresponsive.",
+      "deposit_dispute": "Texas Property Code 92.109: landlord must return deposit within 30 days with itemized statement. Failure to comply forfeits right to keep deposit and exposes landlord to liability for $100 penalty + 3x wrongfully withheld amount + attorney fees.",
+      "illegal_entry": "Texas has no statute requiring advance notice for entry, but courts recognize an implied covenant of quiet enjoyment. Document all unauthorized entries with dates/times. This may constitute harassment or constructive eviction.",
+      "eviction_notice": "Texas requires a 3-day notice to vacate before filing an eviction suit (forcible detainer). You have the right to a hearing in Justice of the Peace court. Do NOT ignore the court summons — failure to appear results in automatic judgment against you.",
+      "rent_increase": "Texas has no rent control. At lease renewal, landlord can raise rent to any amount with proper notice. Month-to-month tenancy: landlord must give written notice equal to the rent period (typically 30 days). No increase is permitted during a fixed-term lease without your agreement.",
+      "retaliation": "Texas Property Code 92.331: landlord cannot retaliate against a tenant for good-faith repair requests, code complaints, or exercising legal rights. There is a 6-month presumption of retaliation after protected activity. Remedies include a month's rent, actual damages, and attorney fees.",
+      "pest_infestation": "Texas Property Code 92.056: pest infestation that materially affects health and safety requires landlord remediation within 7 days of written notice. For bedbugs, landlord must disclose known infestations under 92.164. Send written notice immediately and document the infestation with photos.",
+      "utility_shutoff": "Texas Property Code 92.008 explicitly prohibits landlords from interrupting electricity, water, gas, or heat to force a tenant out. This is illegal self-help eviction. Contact the utility company with proof of tenancy, file a police report, and contact legal aid — landlord faces $1,000+ in damages.",
+      "unsafe_conditions": "Texas Property Code 92.056: landlord must repair conditions materially affecting health and safety within 7 days of the first written notice (a second written notice may be needed for full remedies). Examples include broken stairs, exposed wiring, non-working smoke detectors, and structural damage. Document everything.",
+      "housing_discrimination": "The Texas Fair Housing Act and federal Fair Housing Act prohibit discrimination based on race, color, religion, sex, national origin, familial status, and disability. File a complaint with the Texas Workforce Commission Civil Rights Division or HUD (hud.gov/fair_housing) within 1 year of the discriminatory act."
+    }
+  },
+  "new_york": {
+    "name": "New York",
+    "depositLimit": "1 month rent (since 2019 HSTPA)",
+    "depositReturnDays": 14,
+    "noticeToEnterHours": "Reasonable notice (no specific statute outside NYC)",
+    "repairDeadlineDays": "Reasonable time; NYC Emergency Repair Program can act in 24 hours for dangerous conditions",
+    "evictionNoticeDays": "14-day pay-or-quit; 30-day termination notice (1+ year tenants need 60-90 days)",
+    "keyProtections": [
+      "2019 Housing Stability and Tenant Protection Act: strongest tenant protections in US history",
+      "Rent stabilization: covers ~1 million NYC apartments — limits rent increases and requires lease renewals",
+      "Deposit cap: 1 month rent maximum since 2019",
+      "14-day deposit return deadline (reduced from 30 days in 2019)",
+      "Good cause eviction protections expanding in NYC and some municipalities",
+      "Warranty of habitability: strict implied warranty under Real Property Law 235-b"
+    ],
+    "situations": {
+      "broken_heat": "NYC: landlords must provide heat from Oct 1 - May 31 — 68°F between 6am-10pm when outside temp is below 55°F, and 62°F overnight. This is NYC Housing Maintenance Code §27-2029. File a complaint with 311 immediately. Outside NYC: NY Multiple Dwelling Law applies.",
+      "no_hot_water": "New York Real Property Law 235-b and NYC Housing Maintenance Code require hot water at 120°F 24/7 year-round. Call 311 in NYC or contact local housing authority. Document and send written notice to landlord.",
+      "mold": "NYC: mold is a class B or C violation under Housing Maintenance Code if it covers 10+ sq ft. File with NYC HPD online or via 311. Landlord must remediate. Outside NYC: habitability law applies — document and send written notice.",
+      "deposit_dispute": "New York Real Property Law 576: landlord must return deposit within 14 days of move-out with itemized statement. Failure to provide itemized statement = forfeiture of right to make deductions. Sue in Small Claims Court (up to $10,000).",
+      "illegal_entry": "New York Real Property Law 235: landlord must provide reasonable notice before entry. Harassment of tenants is illegal under NYC Admin Code 27-2005. Document every incident — this can support a harassment claim or rent reduction.",
+      "eviction_notice": "New York requires court proceedings to evict — landlord cannot self-help evict (change locks, remove belongings). For non-payment: 14-day notice then court. For lease violations: 10-day cure notice then 30-day termination notice. You must appear in Housing Court.",
+      "rent_increase": "Rent stabilized tenants: increases are set by the Rent Guidelines Board each year. Market-rate tenants: since the 2019 HSTPA, landlords must give 30 days notice for increases if you've lived there under 1 year, 60 days for 1-2 years, 90 days for 2+ years. No mid-lease increases without your consent.",
+      "retaliation": "New York Real Property Law 223-b: landlord cannot retaliate within 1 year of protected activity (complaints, repairs, organizing). Retaliation is legally presumed within that period. Remedies include actual damages, attorney fees, and injunctive relief. NYC also has a separate harassment statute (Admin Code 27-2005).",
+      "pest_infestation": "NYC Housing Maintenance Code classifies pest infestations as class B (hazardous) or C (immediately hazardous) violations. File with NYC HPD online or via 311. Outside NYC: send written notice to landlord. The implied warranty of habitability (RPL 235-b) requires landlords to maintain pest-free conditions.",
+      "utility_shutoff": "Utility shutoffs by landlords are illegal harassment in New York. NYC Admin Code 27-2005 makes it a criminal offense. Contact 311 and file with NYC HPD immediately. Contact the utility company with your lease as proof. Outside NYC, contact local housing authority. Landlord faces civil and criminal penalties.",
+      "unsafe_conditions": "New York RPL 235-b (warranty of habitability) protects all tenants. NYC classifies violations as A (non-hazardous), B (hazardous — must fix within 30 days), or C (immediately hazardous — fix within 24 hours). File with HPD in NYC or local housing authority outside NYC. Document all conditions with photos.",
+      "housing_discrimination": "The New York Human Rights Law has some of the broadest protected classes in the US, including source of income, lawful occupation, and military status. File with the NYS Division of Human Rights (dhr.ny.gov) or the NYC Commission on Human Rights within 1 year. Private lawsuits are also available."
+    }
+  },
+  "florida": {
+    "name": "Florida",
+    "depositLimit": "No statutory limit",
+    "depositReturnDays": 15,
+    "noticeToEnterHours": 12,
+    "repairDeadlineDays": "7 days after written notice for significant damage; immediate for dangerous conditions",
+    "evictionNoticeDays": "3-day pay-or-quit; 7-day cure notice for lease violations; 15-day no-cause termination",
+    "keyProtections": [
+      "Florida Statutes §83.56: repair obligations — tenant must first deliver written notice",
+      "Landlord must maintain roof, windows, doors, floors, screens, plumbing, heating/cooling, extermination",
+      "No statewide rent control (constitutional amendment preempts local rent control)",
+      "Deposit must be held in separate bank account or surety bond",
+      "Retaliation protection under §83.64 — no eviction/rent increase within 1 year of protected complaint"
+    ],
+    "situations": {
+      "broken_heat": "Florida Statutes §83.51 requires landlord to provide functioning heating/cooling. Send written 7-day notice. After 7 days without repair, you may terminate the lease OR repair-and-deduct. Florida's hot climate means A/C failure can also be a habitability issue.",
+      "no_hot_water": "Hot water is a basic habitability requirement under Florida Statutes §83.51. Send written 7-day notice to landlord. Document the lack of hot water with photos/dates. After notice period, you may repair-and-deduct or terminate lease.",
+      "mold": "Florida has no specific mold statute, but mold falls under the general habitability requirement (§83.51). Document with photos. If mold-related to water intrusion (roof leak, plumbing), that is clearly landlord's responsibility. Contact Florida Department of Health for severe cases.",
+      "deposit_dispute": "Florida Statutes §83.49: landlord must return deposit within 15 days OR send written notice of intention to claim within 30 days. If landlord misses 30-day window, they forfeit all claims. Sue in county court for deposit plus attorney fees.",
+      "illegal_entry": "Florida Statutes §83.53: landlord must give 12 hours notice before entry (except emergencies). Unauthorized entry is a violation of your quiet enjoyment rights. Document all incidents. Repeated violations may allow you to terminate the lease.",
+      "eviction_notice": "Florida requires 3-day written notice for non-payment (excluding weekends/holidays). You have the right to pay during the 3-day period to avoid eviction. For lease violations: 7-day notice with opportunity to cure. Do NOT ignore any court filings.",
+      "rent_increase": "Florida has no rent control (a 2023 constitutional amendment preempts all local rent control). Landlord can increase rent at lease renewal. Month-to-month tenancy: landlord must give 30 days written notice before the increase takes effect. No rent increase is allowed during a fixed-term lease.",
+      "retaliation": "Florida Statutes 83.64: retaliation is prohibited within 1 year of a protected complaint (code violations, repair requests, exercise of legal rights). Landlord cannot increase rent, reduce services, or start eviction proceedings in retaliation. Presumption of retaliation applies within that 1-year window.",
+      "pest_infestation": "Florida Statutes 83.51 explicitly lists extermination of rats, mice, roaches, ants, wood-destroying organisms, and bedbugs as a landlord responsibility. Send 7-day written notice. After 7 days without action, you may be able to repair-and-deduct or terminate the lease. Document infestation with photos.",
+      "utility_shutoff": "Florida Statutes 83.67 explicitly prohibits landlords from interrupting or causing interruption of any utility — this is a criminal violation. Contact the utility company with your lease, file a complaint with local code enforcement and the Florida AG, and call police. Landlord faces criminal charges and civil liability.",
+      "unsafe_conditions": "Florida Statutes 83.51 requires landlords to maintain habitable premises including roof, windows, plumbing, heating and cooling, and pest-free conditions. Send 7-day written notice. After 7 days without action, you may terminate the lease or pursue repair-and-deduct. Contact local code enforcement for emergency inspections.",
+      "housing_discrimination": "The Florida Fair Housing Act mirrors federal law and covers race, color, national origin, sex, disability, familial status, and religion. File a complaint with the Florida Commission on Human Relations (fchr.myflorida.com) or HUD within 1 year. Attorney fees are available if you prevail."
+    }
+  },
+  "illinois": {
+    "name": "Illinois",
+    "depositLimit": "No statewide limit (Chicago: no limit but strict rules)",
+    "depositReturnDays": 30,
+    "noticeToEnterHours": "Reasonable notice (Chicago RLTO: 2 days)",
+    "repairDeadlineDays": "14 days after written notice (Chicago RLTO); reasonable time statewide",
+    "evictionNoticeDays": "5-day pay-or-quit; 10-day cure notice; 30-day no-cause termination",
+    "keyProtections": [
+      "Chicago Residential Landlord-Tenant Ordinance (RLTO): one of the strongest tenant protection laws in the US",
+      "Chicago: deposit must be held in interest-bearing account; written receipt required",
+      "Chicago repair-and-deduct: after 14-day notice, deduct up to $500 or half month rent",
+      "Chicago rent withholding: after notice, may withhold rent proportional to diminished value",
+      "Statewide Residential Landlord and Tenant Act provides baseline protections"
+    ],
+    "situations": {
+      "broken_heat": "Chicago RLTO requires heat of 68°F from Sept 15 - June 1 (66°F overnight). Send written 14-day notice to landlord. If not repaired, you may withhold rent proportional to diminished value OR repair-and-deduct. Outside Chicago: Illinois law requires reasonable repair time.",
+      "no_hot_water": "Hot water is required under Chicago RLTO and Illinois habitability law. Chicago: send 14-day written notice, then withhold rent or repair-and-deduct. Document the problem with photos/dates. Outside Chicago: send written notice, landlord has reasonable time to repair.",
+      "mold": "Mold is a habitability violation under Chicago RLTO. Document extensively. Send 14-day written notice. If unaddressed, Chicago tenants may withhold rent proportional to the diminished value or terminate the lease. Contact Chicago Department of Buildings for severe cases.",
+      "deposit_dispute": "Chicago RLTO: deposit must be returned within 30 days with itemized statement. Interest must be paid on deposits. Failure to comply: landlord owes TWICE the deposit amount plus attorney fees. Outside Chicago: 30-day return, sue in small claims court.",
+      "illegal_entry": "Chicago RLTO §5-12-050: landlord must give 2 days notice before entry. Unauthorized entry allows tenant to terminate lease with 14-day written notice. Document every incident. Outside Chicago: reasonable notice required.",
+      "eviction_notice": "Illinois: 5-day notice for non-payment; 10-day notice for lease violations. You have until the court date to pay. Chicago tenants have additional RLTO defenses. Legal aid is available — contact Prairie State Legal Services or Chicago Legal Aid.",
+      "rent_increase": "Illinois has no statewide rent control, and Chicago has no local rent control ordinance. Month-to-month: landlord must give 30 days written notice before a rent increase. Chicago RLTO also requires that renewal lease offers be sent 60-90 days before lease end for long-term tenants. No mid-lease increases.",
+      "retaliation": "Chicago RLTO 5-12-150 and Illinois law prohibit retaliation. Landlord cannot increase rent, decrease services, or file for eviction within 1 year of your protected activity (complaints, code calls, organizing). Chicago tenants can sue for 2 months rent plus attorney fees for retaliatory conduct.",
+      "pest_infestation": "Chicago RLTO and Illinois habitability law require landlords to maintain pest-free conditions. Chicago: send 14-day written notice. After 14 days without action, you may withhold proportional rent or hire an exterminator and deduct the cost (repair-and-deduct up to $500 or half month rent). Document with photos.",
+      "utility_shutoff": "Chicago RLTO 5-12-110 and Illinois law make utility shutoffs by landlords illegal. Chicago tenants are entitled to $100 per day in damages. Contact the utility company with your lease, file with the City of Chicago, and contact Chicago Legal Aid for emergency injunctive relief.",
+      "unsafe_conditions": "Chicago RLTO covers habitability comprehensively: structural safety, electrical, plumbing, heating, and pest-free conditions. Chicago: after 14-day written notice, withhold rent proportional to the diminished value of the unit. Statewide: contact local code enforcement. Document all unsafe conditions thoroughly.",
+      "housing_discrimination": "The Illinois Human Rights Act prohibits housing discrimination and covers source of income in addition to federal protected classes. Chicago also bans discrimination based on military status. File with the Illinois Department of Human Rights (illinois.gov/humanrights) or the Chicago Commission on Human Relations within 1 year."
+    }
+  },
+  "washington": {
+    "name": "Washington",
+    "depositLimit": "No statutory limit",
+    "depositReturnDays": 21,
+    "noticeToEnterHours": "2 days (Washington Residential Landlord-Tenant Act)",
+    "repairDeadlineDays": "Immediate for essential services; 10 days for other repairs after written notice",
+    "evictionNoticeDays": "3/14-day pay-or-quit; 10-day cure notice; 20-day no-cause termination",
+    "keyProtections": [
+      "Just Cause Eviction: most WA cities require just cause to terminate month-to-month tenancies",
+      "Repair-and-deduct: after 10-day notice, deduct up to $300 or half month rent for essential repairs",
+      "Deposit must be placed in trust account and itemized within 21 days of move-out",
+      "Retaliation protection: 90-day presumption of retaliation after protected activity",
+      "Seattle Just Cause Eviction Ordinance and Renter Protection laws provide additional protections"
+    ],
+    "situations": {
+      "broken_heat": "Washington RCW 59.18.060: landlord must provide heating capable of maintaining 68°F. Heat is an essential service. Send written notice; if not repaired within a reasonable time (immediate for essential services), you may repair-and-deduct (up to $300 or half month rent).",
+      "no_hot_water": "Hot water is an essential service under Washington RCW 59.18.060. Send written notice to landlord. Failure to restore essential services within a reasonable time allows you to terminate lease with 3-day notice OR get a court order for repairs.",
+      "mold": "Washington RCW 59.18.115 specifically addresses mold: landlord must provide mold-related disclosure and maintain the unit to prevent mold. Document with photos. Send written notice. After 10 days, you may repair-and-deduct or contact local code enforcement.",
+      "deposit_dispute": "Washington RCW 59.18.280: deposit must be returned within 21 days with itemized statement and receipts. Non-compliance: tenant may recover double the wrongfully withheld deposit plus attorney fees. Send demand letter, then sue in small claims court.",
+      "illegal_entry": "Washington RCW 59.18.150: landlord must give 2 days notice before entry (except emergencies). Unauthorized entry may constitute trespass. Document every incident. Repeated violations allow you to terminate your lease.",
+      "eviction_notice": "Washington requires just cause for eviction in most cities. Non-payment: 14-day notice to pay or vacate. Lease violation: 10-day notice to comply or vacate. For month-to-month without cause: 20-day notice (more in some cities). Respond to all court filings.",
+      "rent_increase": "Washington state law preempts local rent control, but landlords must give adequate advance notice. Month-to-month: 20 days written notice required before a rent increase. Seattle requires 60 days notice for rent increases. Fixed-term lease: no increase until renewal. Increases over 10% may require additional notice in some cities.",
+      "retaliation": "Washington RCW 59.18.250: retaliation is prohibited after a tenant exercises protected rights (repair requests, complaints, organizing). There is a 90-day presumption of retaliation after protected activity. Remedies include actual damages, attorney fees, and injunctive relief. Seattle has additional anti-retaliation ordinances.",
+      "pest_infestation": "Washington RCW 59.18.060: extermination of pests including rodents and insects is explicitly listed as a landlord duty. Send written notice. Landlord has 10 days to address. After 10 days without action, repair-and-deduct rights apply (up to $300 or half month rent). Document with photos and report to local health department.",
+      "utility_shutoff": "Washington RCW 59.18.300 makes landlord utility shutoffs illegal self-help eviction. Tenant is entitled to actual damages and attorney fees. Contact the utility company with your lease, file a complaint with the Washington State AG Consumer Protection Division, and seek emergency court relief.",
+      "unsafe_conditions": "Washington RCW 59.18.060 contains detailed habitability requirements. After written notice: immediate repair for essential services (heat, water, electricity); 10 days for other conditions. Repair-and-deduct available after notice period (up to $300 or half month rent). Code enforcement complaints are powerful tools in Washington.",
+      "housing_discrimination": "The Washington Law Against Discrimination (WLAD) prohibits housing discrimination and includes marital status, sexual orientation, and ancestry as protected classes. File with the Washington State Human Rights Commission (hrc.wa.gov) within 6 months (WLAD) or HUD within 1 year (federal Fair Housing Act)."
+    }
+  },
+  "georgia": {
+    "name": "Georgia",
+    "depositLimit": "No statutory limit",
+    "depositReturnDays": 30,
+    "noticeToEnterHours": "No specific statute (reasonable notice implied)",
+    "repairDeadlineDays": "No specific timeline — reasonable time after written notice",
+    "evictionNoticeDays": "3-day demand for rent; 60-day no-cause termination for month-to-month",
+    "keyProtections": [
+      "Georgia is landlord-friendly with minimal tenant protections",
+      "Deposit return: 30 days, with itemized statement if deductions made",
+      "No repair-and-deduct remedy available",
+      "Implied warranty of habitability (judicially created, not statutory)",
+      "Retaliation protection: landlord cannot evict in retaliation for housing code complaints"
+    ],
+    "situations": {
+      "broken_heat": "Georgia has no specific statute requiring heating, but courts recognize an implied warranty of habitability. Send written notice immediately. If landlord fails to repair within a reasonable time, you may have grounds to break the lease or seek rent reduction through court action.",
+      "no_hot_water": "Hot water falls under Georgia's judicially-created habitability warranty. Document and send written notice. Georgia tenants cannot legally withhold rent or repair-and-deduct — your main remedies are terminating the lease or suing for damages in court.",
+      "mold": "Georgia has no specific mold statute. Severe mold affecting habitability may allow lease termination. Document everything. Contact local code enforcement. Your primary remedy is court action — Georgia does not allow rent withholding.",
+      "deposit_dispute": "Georgia Code §44-7-34: landlord must return deposit within 30 days. If deductions are made, they must be itemized in writing. Failure to return deposit: sue in magistrate court (small claims). Georgia courts take deposit theft seriously.",
+      "illegal_entry": "Georgia has no specific notice requirement for landlord entry, but courts recognize quiet enjoyment rights. Document unauthorized entries. Repeated harassment may constitute constructive eviction, allowing you to break the lease.",
+      "eviction_notice": "Georgia requires a 3-day written demand for rent before filing dispossessory (eviction). Once filed, you typically have 7 days to respond. Do NOT ignore court summons. Failure to appear = automatic judgment. Contact Georgia Legal Aid immediately.",
+      "rent_increase": "Georgia has no rent control. Landlord may increase rent at end of any lease term. Month-to-month: Georgia Code 44-7-7 requires 60 days written notice before a rent increase. Fixed-term lease: no increase allowed during the lease term. Document the notice date and your payment history.",
+      "retaliation": "Georgia Code 44-7-24.1: retaliation is prohibited after a tenant files housing code complaints or exercises legal rights. Landlord cannot evict or raise rent in retaliation. Document your complaint (code enforcement call, repair request) and any retaliatory action immediately. Contact Georgia Legal Aid for assistance.",
+      "pest_infestation": "Georgia Code 44-7-13 requires landlords to keep premises in repair and habitable condition, which courts have interpreted to include pest control. Document the infestation with photos. Send written notice. Georgia has no repair-and-deduct remedy, so your primary options are code enforcement complaints and court action.",
+      "utility_shutoff": "Georgia Code 44-7-14.1: landlord utility shutoffs to force a tenant out are illegal. Courts treat this as harassment or constructive eviction, potentially allowing you to break the lease. Contact the utility provider with proof of tenancy, file a police report, and contact Georgia Legal Aid for emergency relief.",
+      "unsafe_conditions": "Georgia courts recognize an implied warranty of habitability. For serious hazards (broken stairs, carbon monoxide risk, structural damage), contact local code enforcement immediately for an emergency inspection. Georgia has no repair-and-deduct remedy, so your primary remedies are code enforcement and small claims court.",
+      "housing_discrimination": "Georgia Fair Housing Law and the federal Fair Housing Act apply. Protected classes include race, color, national origin, religion, sex, familial status, and disability. File with the Georgia Commission on Equal Opportunity (gceo.georgia.gov) or HUD within 1 year. Document all discriminatory acts with dates and details."
+    }
+  },
+  "colorado": {
+    "name": "Colorado",
+    "depositLimit": "No statutory limit",
+    "depositReturnDays": 30,
+    "noticeToEnterHours": "No specific statute (reasonable notice implied)",
+    "repairDeadlineDays": "Reasonable time after written notice; 24 hours for emergency habitability conditions",
+    "evictionNoticeDays": "10-day pay-or-quit; 3-day cure notice; 21-day no-cause termination (6 months minimum notice in some cases)",
+    "keyProtections": [
+      "2021 SB 173: significant new tenant protections — limits application fees, move-in fees",
+      "2023 HB 23-1120: right to cure lease violations and new eviction protections",
+      "Warranty of habitability: landlord must maintain habitable conditions (CRS 38-12-501 to 511)",
+      "Repair-and-deduct: after written notice and failure to repair, tenant may repair and deduct costs",
+      "Anti-source-of-income discrimination: landlords cannot refuse housing vouchers"
+    ],
+    "situations": {
+      "broken_heat": "Colorado CRS 38-12-505 requires habitable conditions including adequate heat. Send written notice; landlord must repair within a reasonable time (emergency conditions require immediate action). New 2023 protections strengthen your rights. Document everything.",
+      "no_hot_water": "Hot water is a habitability requirement under Colorado CRS 38-12-505. Send written notice. After reasonable time without repair, you may have grounds to repair-and-deduct or terminate the lease. Colorado's newer tenant protection laws give you stronger remedies.",
+      "mold": "Mold affecting habitability falls under Colorado CRS 38-12-505. Document with photos. Send written notice. Colorado's newer laws (post-2021) provide stronger remedies. Contact local code enforcement if landlord is unresponsive.",
+      "deposit_dispute": "Colorado CRS 38-12-103: deposit must be returned within 30 days (or 60 days if lease specifies). Landlord must provide itemized statement for any deductions. Wrongful withholding: sue for 3x the wrongfully withheld amount plus attorney fees.",
+      "illegal_entry": "Colorado has no specific entry notice statute (unlike many states), but the implied covenant of quiet enjoyment applies. Document all unauthorized entries. Repeated harassment may allow lease termination for constructive eviction.",
+      "eviction_notice": "Colorado: 10-day notice for non-payment. New 2023 protections give you right to cure. Once in court, you typically have 7 days to respond. Colorado Legal Services provides free help. Do not ignore any court filings.",
+      "rent_increase": "Colorado has no rent control. Month-to-month: 2021 SB 173 increased the required notice to 21 days before a rent increase (up from 10 days). Fixed-term lease: no increase until renewal. 2023 HB 23-1120 added additional protections. Always get any rent increase in writing.",
+      "retaliation": "Colorado CRS 38-12-509: retaliation is prohibited after a tenant exercises protected rights (repair requests, code complaints, organizing). 2021 reforms significantly strengthened anti-retaliation protections. Document your protected activity (date, method, content) and any subsequent adverse action by the landlord.",
+      "pest_infestation": "Colorado CRS 38-12-505 habitability law covers pest-free conditions. Send written notice to landlord. Landlord has a reasonable time to remediate (emergency conditions require faster action). Colorado's 2021 tenant protection laws provide stronger remedies. Contact local code enforcement if landlord is unresponsive.",
+      "utility_shutoff": "Colorado CRS 38-12-510 (strengthened in 2021): landlord utility shutoffs are illegal self-help eviction. Tenant is entitled to actual damages, attorney fees, and a civil penalty. Contact your utility company with your lease, file a complaint with local code enforcement, and seek emergency court injunctive relief.",
+      "unsafe_conditions": "Colorado CRS 38-12-505 through 511 detail habitability requirements. After written notice: emergency conditions (lack of heat, water, gas) require repair within 24 hours; other conditions within a reasonable time. Repair-and-deduct is available. 2021 and 2023 reforms significantly strengthened tenant remedies in Colorado.",
+      "housing_discrimination": "Colorado Fair Housing Act and federal law apply. Colorado protects source of income (housing vouchers) in addition to federal protected classes. File with the Colorado Civil Rights Division (dora.colorado.gov/ccrd) or HUD within 1 year. Colorado has strong protections against voucher discrimination."
+    }
+  },
+  "arizona": {
+    "name": "Arizona",
+    "depositLimit": "1.5 months rent (security deposit cap)",
+    "depositReturnDays": 14,
+    "noticeToEnterHours": 48,
+    "repairDeadlineDays": "10 days after written notice (5 days for immediate health/safety)",
+    "evictionNoticeDays": "5-day pay-or-quit; 10-day cure notice; 30-day no-cause termination",
+    "keyProtections": [
+      "Arizona Residential Landlord and Tenant Act (ARLTA): ARS 33-1314 through 33-1381",
+      "Repair-and-deduct: after written notice, deduct up to $150 or half month rent",
+      "Deposit cap: 1.5 months rent maximum",
+      "14-day deposit return (one of the fastest in the US)",
+      "Retaliation protection under ARS 33-1381"
+    ],
+    "situations": {
+      "broken_heat": "Arizona ARS 33-1324 requires landlord to provide heating capable of maintaining 68°F. This is a health/safety issue — 5-day notice applies. After 5 days without repair, you may repair-and-deduct (up to $150 or half month rent) or terminate the lease with 10-day notice.",
+      "no_hot_water": "Hot water is required under Arizona ARS 33-1324. Send written notice (certified mail recommended). Health/safety issue: landlord has 5 days to repair. After 5 days without repair, repair-and-deduct rights apply. Arizona has a high eviction rate — document carefully.",
+      "mold": "Mold affecting habitability is covered under ARS 33-1324. Document with photos and send written notice. If landlord fails to remediate within 10 days, you may terminate the lease or pursue legal remedies. Contact Maricopa County Environmental Services for severe cases.",
+      "deposit_dispute": "Arizona ARS 33-1321: deposit cap is 1.5 months rent. Return deadline is 14 days after move-out. Landlord must provide itemized statement for deductions. Wrongful withholding: double damages plus attorney fees. File in justice court (small claims) for amounts up to $3,500.",
+      "illegal_entry": "Arizona ARS 33-1343: landlord must give 48 hours notice before entry (except emergencies). Unauthorized entry allows you to terminate the lease with 5-day notice. Document every incident with dates and times.",
+      "eviction_notice": "Arizona's eviction rate is among the highest nationally. 5-day pay-or-quit notice: pay ALL rent owed within 5 days. If you can't pay, respond in writing and request a payment plan. You MUST appear at your court hearing. Contact Community Legal Services for free help.",
+      "rent_increase": "Arizona has no rent control. Month-to-month: ARS 33-1375 requires 30 days written notice before a rent increase. Fixed-term lease: landlord cannot increase rent during the lease term. Arizona has a high-volume rental market — review your lease renewal carefully for any increase provisions.",
+      "retaliation": "Arizona ARS 33-1381: anti-retaliation law. If landlord takes adverse action within 6 months of your protected activity (complaints, repair requests, union activity), retaliation is legally presumed. You can recover actual damages plus attorney fees. Document all protected activities and any landlord response.",
+      "pest_infestation": "Arizona ARS 33-1324 requires landlords to maintain pest-free conditions. Bedbugs have specific notification requirements under ARS 33-1319. Send written notice. This is a health/safety issue: 5-day notice period applies. After non-compliance, repair-and-deduct (up to $150 or half month rent) or terminate lease with 10-day notice.",
+      "utility_shutoff": "Arizona ARS 33-1364: landlord cannot willfully or negligently cause a utility to be shut off. This is illegal self-help eviction. Tenant may recover actual damages plus up to $5,000 in consequential damages. Contact the utility company with your lease, file a police report, and seek emergency court relief.",
+      "unsafe_conditions": "Arizona ARS 33-1324 lists specific habitability requirements including plumbing, heating, electrical, and structural safety. Health/safety conditions: 5-day written notice; other conditions: 10-day notice. After non-compliance: repair-and-deduct (up to $150) or terminate with 10-day notice. Document conditions with photos.",
+      "housing_discrimination": "The Arizona Fair Housing Act (ARS 41-1491) mirrors federal law. File with the Arizona Attorney General Civil Rights Division (azag.gov/civil-rights) or HUD within 1 year. Phoenix and Tucson have local fair housing ordinances that may provide broader protections. Document all discriminatory acts."
+    }
+  },
+  "north_carolina": {
+    "name": "North Carolina",
+    "depositLimit": "2 months rent (month-to-month: 1.5 months)",
+    "depositReturnDays": 30,
+    "noticeToEnterHours": "No specific statute (reasonable notice implied)",
+    "repairDeadlineDays": "No specific timeline — reasonable time after written notice",
+    "evictionNoticeDays": "10-day pay-or-quit; 30-day no-cause termination for month-to-month",
+    "keyProtections": [
+      "North Carolina Residential Rental Agreements Act (RRAA): NCGS Chapter 42",
+      "Implied warranty of habitability",
+      "Deposit cap: 2 months (month-to-month: 1.5 months)",
+      "Landlord must maintain premises in habitable condition",
+      "Retaliation protection: landlord cannot evict within 12 months of protected complaint"
+    ],
+    "situations": {
+      "broken_heat": "North Carolina NCGS 42-42 requires landlords to maintain habitable premises including functioning heat. Send written notice to landlord. NC does not specify a repair deadline — 'reasonable time' applies. Document everything. If not repaired, you may have grounds to terminate or seek rent reduction.",
+      "no_hot_water": "Hot water is a habitability requirement under North Carolina NCGS 42-42. Send written notice and keep copies. NC has no repair-and-deduct remedy. Your main options: negotiate with landlord, contact code enforcement, or file in small claims court for damages.",
+      "mold": "Mold falls under NC's habitability warranty (NCGS 42-42). NC does not have a specific mold statute. Document with photos. Send written notice. Contact local code enforcement (municipality or county) if landlord is unresponsive. NC tenants cannot withhold rent legally.",
+      "deposit_dispute": "North Carolina NCGS 42-52: deposit must be returned within 30 days. Must be held in trust account or surety bond. Landlord must provide itemized statement for deductions. Failure to comply: tenant may recover the deposit plus damages. Sue in small claims court.",
+      "illegal_entry": "NC has no specific landlord entry notice statute, but the implied covenant of quiet enjoyment applies. Document all unauthorized entries with dates and times. Repeated intrusions may support a habitability claim or constructive eviction defense.",
+      "eviction_notice": "North Carolina: 10-day notice for non-payment (you have 10 days to pay entire balance). If eviction is filed, you must respond within 7 days or judgment is entered against you. Hearing is typically 7-14 days after summons. Contact Legal Aid of North Carolina immediately.",
+      "rent_increase": "North Carolina has no rent control. Month-to-month: NCGS 42-14 requires 7 days written notice before a rent increase (one of the shortest notice periods in the US). Fixed-term lease: no increase during the lease term. Consider negotiating at renewal. Always get any new rent amount in writing.",
+      "retaliation": "North Carolina NCGS 42-37.1: retaliation is prohibited for 12 months after protected activity (code complaints, repair requests, exercising legal rights). Landlord cannot evict, raise rent, or reduce services in retaliation. Document your complaint and the retaliatory action. Contact Legal Aid of NC for help.",
+      "pest_infestation": "North Carolina NCGS 42-42 requires landlords to maintain habitable premises, which courts have interpreted to include pest control. Document the infestation with photos and dates. Send written notice. NC has no repair-and-deduct remedy — your primary options are code enforcement complaints and small claims court.",
+      "utility_shutoff": "North Carolina NCGS 42-14.2: utility shutoffs used as self-help eviction are illegal. Contact the utility company with proof of tenancy (lease). File a criminal complaint with the local magistrate and contact Legal Aid of NC for emergency injunctive relief. Landlord faces criminal charges and civil liability.",
+      "unsafe_conditions": "North Carolina NCGS 42-42 requires landlords to maintain habitable conditions. No specific repair deadline — reasonable time applies based on severity. Contact local code enforcement for a formal inspection. NC has no repair-and-deduct remedy, so code enforcement complaints and court action are your primary tools. Document everything.",
+      "housing_discrimination": "North Carolina Fair Housing Act mirrors federal law. Protected classes include race, color, national origin, religion, sex, familial status, and disability. File with the NC Human Relations Commission (ncdoa.nc.gov) or HUD within 1 year of the discriminatory act. Document all incidents with dates, names, and statements."
+    }
+  }
+}

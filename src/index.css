@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Custom properties ───────────────────────────────────────────────────── */
+:root {
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth:  cubic-bezier(0.4, 0, 0.2, 1);
+  --tab-h: 64px;
+}
+
+/* ── Base ────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+    background-color: #f8fafc; /* slate-50 */
+    color: #0f172a; /* slate-900 */
+  }
+  * { box-sizing: border-box; }
+
+  input, textarea, select {
+    font-size: 16px !important;
+    font-family: inherit;
+  }
+  button { -webkit-appearance: none; }
+}
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1);    }
+}
+
+@keyframes flagReveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes spinSmooth {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 50%; }
+  100% { background-position: -200% 50%; }
+}
+
+@keyframes urgencyPulse {
+  0%, 100% { opacity: 1;    transform: scale(1);    }
+  50%       { opacity: 0.6; transform: scale(1.15); }
+}
+
+/* ── Utilities ───────────────────────────────────────────────────────────── */
+@layer utilities {
+  /* Entrance animations — 180–220ms, expo ease-out, no bounce */
+  .animate-slide-up    { animation: slideUp    0.22s var(--ease-out)    both; }
+  .animate-slide-down  { animation: slideDown  0.18s var(--ease-out)    both; }
+  .animate-fade-in     { animation: fadeIn     0.20s var(--ease-smooth) both; }
+  .animate-scale-in    { animation: scaleIn    0.20s var(--ease-out)    both; }
+  .animate-flag-pop    { animation: flagReveal 0.24s var(--ease-out)    both; }
+  .animate-spin-smooth { animation: spinSmooth 0.7s  linear infinite;         }
+
+  /* Staggered list entrance */
+  .stagger > *:nth-child(1)  { animation-delay:   0ms; }
+  .stagger > *:nth-child(2)  { animation-delay:  40ms; }
+  .stagger > *:nth-child(3)  { animation-delay:  80ms; }
+  .stagger > *:nth-child(4)  { animation-delay: 120ms; }
+  .stagger > *:nth-child(5)  { animation-delay: 160ms; }
+  .stagger > *:nth-child(6)  { animation-delay: 200ms; }
+  .stagger > *:nth-child(7)  { animation-delay: 240ms; }
+  .stagger > *:nth-child(8)  { animation-delay: 280ms; }
+  .stagger > *:nth-child(9)  { animation-delay: 320ms; }
+  .stagger > *:nth-child(10) { animation-delay: 360ms; }
+  .stagger > *:nth-child(11) { animation-delay: 400ms; }
+  .stagger > *:nth-child(12) { animation-delay: 440ms; }
+
+  /* Press feedback — scale down, no elastic */
+  .press-effect {
+    transition: transform 0.1s var(--ease-smooth),
+                opacity   0.1s var(--ease-smooth);
+  }
+  .press-effect:active {
+    transform: scale(0.97);
+    opacity: 0.85;
+  }
+
+  /* Glass for tab bar */
+  .glass {
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(20px) saturate(1.5);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  }
+
+  /* Safe-area helpers */
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .mb-safe  { margin-bottom:  env(safe-area-inset-bottom, 0px); }
+
+  /* Row separator */
+  .row-separator {
+    border-bottom: 1px solid #f1f5f9; /* slate-100 */
+  }
+  .row-separator:last-child { border-bottom: none; }
+
+  /* Card surface — replaces ios-group */
+  .ios-group {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0; /* slate-200 */
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04),
+                0 1px 2px rgba(15, 23, 42, 0.03);
+  }
+
+  /* Primary action — forest green */
+  .btn-primary {
+    background: #047857; /* emerald-700 */
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 17px 24px;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    transition: background  0.15s var(--ease-smooth),
+                box-shadow  0.15s var(--ease-smooth),
+                transform   0.10s var(--ease-smooth);
+  }
+  .btn-primary:hover {
+    background: #065f46; /* emerald-800 */
+    box-shadow: 0 6px 24px rgba(4, 120, 87, 0.30);
+  }
+  .btn-primary:active  { transform: scale(0.98); }
+  .btn-primary:disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Secondary / ghost button */
+  .btn-secondary {
+    background: #ffffff;
+    color: #334155; /* slate-700 */
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 15px 24px;
+    font-size: 15px;
+    border: 1px solid #e2e8f0; /* slate-200 */
+    transition: background 0.12s var(--ease-smooth),
+                transform  0.10s var(--ease-smooth);
+  }
+  .btn-secondary:hover  { background: #f8fafc; }
+  .btn-secondary:active { transform: scale(0.98); }
+
+  /* Skeleton shimmer */
+  .skeleton {
+    background: linear-gradient(90deg,
+      #f1f5f9 25%,
+      #e2e8f0 50%,
+      #f1f5f9 75%
+    );
+    background-size: 400% 100%;
+    animation: shimmer 1.6s ease-in-out infinite;
+    border-radius: 8px;
+  }
+
+  /* Urgency pulse dot */
+  .dot-pulse {
+    animation: urgencyPulse 2.4s ease-in-out infinite;
+  }
+}
