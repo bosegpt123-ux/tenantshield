@@ -1,3 +1,17 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }]
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "tenantshield.homes" }],
+      "destination": "https://www.invrent.help/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.tenantshield.homes" }],
+      "destination": "https://www.invrent.help/:path*",
+      "permanent": true
+    }
+  ]
 }
