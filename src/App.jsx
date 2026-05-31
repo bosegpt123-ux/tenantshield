@@ -109,26 +109,22 @@ export default function App() {
   return (
     <div className="min-h-dvh flex flex-col bg-slate-50 font-sans">
 
-      {/* ── Header ─────────────────────────────────────────────────────── */}
+      {/* Header */}
       <header className="bg-slate-950 px-6 pt-12 pb-7">
         <div className="mx-auto max-w-xl">
-
-          {/* Wordmark */}
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/15 ring-1 ring-emerald-500/25 text-emerald-400">
               <ShieldIcon size={20} />
             </div>
             <div>
               <h1 className="text-[18px] font-bold tracking-tight text-white leading-none">
-                TenantShield
+                invRent
               </h1>
               <p className="text-[11px] text-slate-400 tracking-wider mt-0.5 font-medium uppercase">
                 Know your rights. Act tonight.
               </p>
             </div>
           </div>
-
-          {/* Hero — visible only on the home state */}
           {showHero && (
             <div className="mt-8 animate-fade-in">
               <h2 className="text-[38px] font-extrabold text-white leading-[1.1] tracking-tight">
@@ -143,10 +139,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* ── Scrollable content ──────────────────────────────────────────── */}
       <main className="flex-1 overflow-y-auto mx-auto w-full max-w-xl px-6 py-7 pb-28">
-
-        {/* Error banner */}
         {error && !loading && (
           <div className="mb-6 animate-slide-down rounded-xl border border-red-200 bg-red-50 px-5 py-4">
             <div className="flex items-start gap-3">
@@ -158,57 +151,31 @@ export default function App() {
               <div className="flex-1">
                 <p className="text-[14px] font-medium text-red-800">{error}</p>
                 {lastFormData && (
-                  <button
-                    onClick={handleRetry}
-                    className="mt-2 text-[13px] font-semibold text-red-700 underline underline-offset-2 hover:text-red-900 transition-colors"
-                  >
-                    Try again
-                  </button>
+                  <button onClick={handleRetry} className="mt-2 text-[13px] font-semibold text-red-700 underline underline-offset-2 hover:text-red-900 transition-colors">Try again</button>
                 )}
               </div>
             </div>
           </div>
         )}
-
-        {/* Tab panels */}
         <div key={contentKey}>
           {activeTab === 'situation' && (
-            loading
-              ? <ResultSkeleton />
-              : result
-                ? <ResultCard result={result} onReset={handleReset} resultMeta={resultMeta} />
-                : <SituationForm onSubmit={handleSituationSubmit} loading={loading} />
+            loading ? <ResultSkeleton /> : result ? <ResultCard result={result} onReset={handleReset} resultMeta={resultMeta} /> : <SituationForm onSubmit={handleSituationSubmit} loading={loading} />
           )}
           {activeTab === 'lease'  && <LeaseAnalyzer />}
           {activeTab === 'letter' && <LetterGenerator />}
         </div>
-
-        {/* How it works — home state only */}
         {activeTab === 'situation' && !result && !loading && !error && <HowItWorks />}
       </main>
 
-      {/* ── Bottom tab bar ──────────────────────────────────────────────── */}
       <nav className="fixed bottom-0 inset-x-0 z-50 glass border-t border-slate-200/80 pb-safe">
         <div className="mx-auto max-w-xl flex">
           {TABS.map(({ id, label, Icon }) => {
             const active = activeTab === id
             return (
-              <button
-                key={id}
-                onClick={() => handleTabChange(id)}
-                className={`press-effect relative flex-1 flex flex-col items-center gap-1 py-3.5 transition-colors duration-200
-                  ${active ? 'text-emerald-700' : 'text-slate-400 hover:text-slate-600'}`}
-              >
-                {/* Top-edge active line */}
-                {active && (
-                  <span className="absolute top-0 left-6 right-6 h-0.5 rounded-b-full bg-emerald-600" />
-                )}
-                <div className={`transition-transform duration-200 ${active ? 'scale-110' : ''}`}>
-                  <Icon size={22} strokeWidth={active ? 2.5 : 1.5} />
-                </div>
-                <span className={`text-[10px] tracking-wide transition-all duration-200 ${active ? 'font-bold' : 'font-medium'}`}>
-                  {label}
-                </span>
+              <button key={id} onClick={() => handleTabChange(id)} className={`press-effect relative flex-1 flex flex-col items-center gap-1 py-3.5 transition-colors duration-200 ${active ? 'text-emerald-700' : 'text-slate-400 hover:text-slate-600'}`}>
+                {active && <span className="absolute top-0 left-6 right-6 h-0.5 rounded-b-full bg-emerald-600" />}
+                <div className={`transition-transform duration-200 ${active ? 'scale-110' : ''}`}><Icon size={22} strokeWidth={active ? 2.5 : 1.5} /></div>
+                <span className={`text-[10px] tracking-wide transition-all duration-200 ${active ? 'font-bold' : 'font-medium'}`}>{label}</span>
               </button>
             )
           })}
