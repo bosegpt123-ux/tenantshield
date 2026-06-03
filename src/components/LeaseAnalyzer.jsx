@@ -66,7 +66,7 @@ export default function LeaseAnalyzer() {
 
   const f = result ? (FLAG[result.flag] || FLAG.suspicious) : null
 
-  /* ── Result view ─────────────────────────────────────────────────────── */
+  /* ââ Result view âââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
   if (result) return (
     <div className="space-y-4 animate-slide-up">
 
@@ -128,7 +128,7 @@ export default function LeaseAnalyzer() {
       {/* Disclaimer */}
       <div className="animate-slide-up rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4" style={{ animationDelay: '180ms' }}>
         <p className="text-[11px] leading-relaxed text-slate-400">
-          <strong className="text-slate-500">General info only, not legal advice.</strong> Laws change — double-check with a local attorney or legal aid clinic before taking action.{' '}
+          <strong className="text-slate-500">General info only, not legal advice.</strong> Laws change â double-check with a local attorney or legal aid clinic before taking action.{' '}
           <span className="text-slate-300">Last updated May 2025.</span>
         </p>
       </div>
@@ -140,14 +140,14 @@ export default function LeaseAnalyzer() {
     </div>
   )
 
-  /* ── Form view ──────────────────────────────────────────────────────── */
+  /* ââ Form view ââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
   return (
     <form onSubmit={handleSubmit} className="space-y-7 animate-slide-up">
 
       <div>
         <h2 className="text-[22px] font-bold text-slate-900 tracking-tight">Lease Clause Analyzer</h2>
         <p className="mt-1.5 text-[14px] text-slate-500 leading-relaxed">
-          Paste any clause — we&apos;ll flag illegal, suspicious, or standard language.
+          Paste any clause â we&apos;ll flag illegal, suspicious, or standard language.
         </p>
       </div>
 
@@ -163,7 +163,7 @@ export default function LeaseAnalyzer() {
             className="w-full appearance-none bg-transparent text-[15px] font-medium text-slate-800 px-5 py-4 pr-11 focus:outline-none cursor-pointer"
             required
           >
-            <option value="">Select your state…</option>
+            <option value="">Select your stateâ¦</option>
             {STATES.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
           </select>
           <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-slate-400">
@@ -182,7 +182,7 @@ export default function LeaseAnalyzer() {
           <div className="px-5 pt-4 pb-3">
             <div className="rounded-xl bg-slate-50 border border-slate-200 px-4 py-3">
               <p className="text-[12px] text-slate-600 leading-relaxed">
-                <strong>Tip:</strong> Copy one paragraph from your lease and paste it here — for example a repair, entry, or deposit clause. No need to paste the whole lease.
+                <strong>Tip:</strong> Copy one paragraph from your lease and paste it here â for example a repair, entry, or deposit clause. No need to paste the whole lease.
               </p>
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function LeaseAnalyzer() {
             <textarea
               value={clause}
               onChange={e => setClause(e.target.value)}
-              placeholder={`e.g. "Tenant shall be responsible for all repairs under $200. Landlord may enter the premises at any time without prior notice…"`}
+              placeholder={`e.g. "Tenant shall be responsible for all repairs under $200. Landlord may enter the premises at any time without prior noticeâ¦"`}
               rows={6}
               className="w-full resize-none bg-transparent text-[14px] text-slate-800 placeholder-slate-300 focus:outline-none leading-relaxed"
               required
@@ -216,7 +216,7 @@ export default function LeaseAnalyzer() {
         {loading ? (
           <>
             <SpinnerIcon size={16} />
-            <span>Analyzing clause…</span>
+            <span>Analyzing clauseâ¦</span>
           </>
         ) : (
           <>
