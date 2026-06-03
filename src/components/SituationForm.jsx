@@ -23,7 +23,7 @@ const SITUATIONS = {
   broken_heat:            { label: 'No heat / broken heater',         Icon: FlameIcon        },
   no_hot_water:           { label: 'No hot water',                    Icon: ShowerIcon       },
   mold:                   { label: 'Mold in unit',                    Icon: AlertIcon        },
-  pest_infestation:       { label: 'Pests — roaches, mice, bedbugs',  Icon: BugIcon          },
+  pest_infestation:       { label: 'Pests â roaches, mice, bedbugs',  Icon: BugIcon          },
   unsafe_conditions:      { label: 'Unsafe living conditions',        Icon: UnsafeHomeIcon   },
   deposit_dispute:        { label: 'Security deposit dispute',        Icon: CreditCardIcon   },
   rent_increase:          { label: 'Sudden / illegal rent increase',  Icon: TrendingUpIcon   },
@@ -73,7 +73,7 @@ export default function SituationForm({ onSubmit, loading }) {
             className="w-full appearance-none bg-transparent text-[15px] font-medium text-slate-800 px-5 py-4 pr-11 focus:outline-none cursor-pointer"
             required
           >
-            <option value="">Select your state…</option>
+            <option value="">Select your stateâ¦</option>
             {STATES.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
           </select>
           <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-slate-400">
@@ -82,7 +82,7 @@ export default function SituationForm({ onSubmit, loading }) {
         </div>
       </div>
 
-      {/* Situation groups — multi-select */}
+      {/* Situation groups â multi-select */}
       <div>
         <div className="flex items-center justify-between mb-1">
           <label className="text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -151,7 +151,7 @@ export default function SituationForm({ onSubmit, loading }) {
           <textarea
             value={details}
             onChange={e => setDetails(e.target.value)}
-            placeholder="e.g. Heater broke 5 days ago, landlord hasn't responded. Also noticed roaches last week…"
+            placeholder="e.g. Heater broke 5 days ago, landlord hasn't responded. Also noticed roaches last weekâ¦"
             rows={3}
             className="w-full resize-none bg-transparent text-[14px] text-slate-800 placeholder-slate-300 focus:outline-none leading-relaxed"
           />
@@ -167,7 +167,7 @@ export default function SituationForm({ onSubmit, loading }) {
         {loading ? (
           <>
             <SpinnerIcon size={16} />
-            <span>Analyzing your situation…</span>
+            <span>Analyzing your situationâ¦</span>
           </>
         ) : (
           <>
