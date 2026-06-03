@@ -33,10 +33,10 @@ const LETTER_OPTIONS = [
 
 const DETAIL_PLACEHOLDERS = {
   repair_demand:            'e.g. Heater stopped working Dec 10. I texted you Dec 10 and 14. Still no repair as of Dec 15.',
-  deposit_return:           'e.g. Moved out Nov 30. It has been 35 days â no deposit or itemized statement received.',
+  deposit_return:           'e.g. Moved out Nov 30. It has been 35 days Ã¢ÂÂ no deposit or itemized statement received.',
   illegal_entry:            'e.g. On Dec 12 at 2pm you entered without notice while I was not home.',
   habitability:             'e.g. Visible mold on bathroom ceiling since Nov. Notified you 3 weeks ago with photos. No action taken.',
-  rent_withholding:         'e.g. Heat has been out for 3 weeks. Sent written notice twice. Unit is uninhabitable below 55Â°F.',
+  rent_withholding:         'e.g. Heat has been out for 3 weeks. Sent written notice twice. Unit is uninhabitable below 55ÃÂ°F.',
   retaliatory_eviction:     'e.g. I called code enforcement on Nov 5 about the mold. You served me an eviction notice on Nov 20.',
   discrimination_complaint: 'e.g. Landlord refused to rent to me, saying the unit was taken. It was re-listed the next day. I believe this was due to my national origin.',
 }
@@ -132,7 +132,7 @@ export default function LetterGenerator() {
   async function handleShare() {
     try {
       if (navigator.share) {
-        await navigator.share({ title: `${selected?.label} â invRent`, text: letter })
+        await navigator.share({ title: `${selected?.label} Ã¢ÂÂ invRent`, text: letter })
       } else {
         await navigator.clipboard.writeText(letter)
         setShareCopied(true)
@@ -158,7 +158,7 @@ export default function LetterGenerator() {
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${selected?.label || 'Letter'} â invRent</title>
+<title>${selected?.label || 'Letter'} Ã¢ÂÂ invRent</title>
 <style>
   body { font-family: 'Times New Roman', Georgia, serif; font-size: 12pt; line-height: 1.7; margin: 1in; color: #000; background: #fff; }
   pre { white-space: pre-wrap; word-break: break-word; font-family: inherit; font-size: 12pt; margin: 0; }
@@ -180,7 +180,7 @@ export default function LetterGenerator() {
 
   const selected = LETTER_OPTIONS.find(o => o.value === letterType)
 
-  /* ââ Step 1 â Select type ââââââââââââââââââââââââââââââââââââââââââââââ */
+  /* Ã¢ÂÂÃ¢ÂÂ Step 1 Ã¢ÂÂ Select type Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   if (step === 1) return (
     <form onSubmit={e => { e.preventDefault(); if (state && letterType) setStep(2) }} className="space-y-7 animate-slide-up">
 
@@ -202,7 +202,7 @@ export default function LetterGenerator() {
             className="w-full appearance-none bg-transparent text-[15px] font-medium text-slate-800 px-5 py-4 pr-11 focus:outline-none cursor-pointer"
             required
           >
-            <option value="">Select your stateâ¦</option>
+            <option value="">Select your stateÃ¢ÂÂ¦</option>
             {STATES.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
           </select>
           <div className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-slate-400">
@@ -253,7 +253,7 @@ export default function LetterGenerator() {
     </form>
   )
 
-  /* ââ Step 2 â Fill details âââââââââââââââââââââââââââââââââââââââââââââ */
+  /* Ã¢ÂÂÃ¢ÂÂ Step 2 Ã¢ÂÂ Fill details Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   if (step === 2) return (
     <form onSubmit={handleGenerate} className="space-y-7 animate-slide-up">
 
@@ -265,7 +265,7 @@ export default function LetterGenerator() {
           Back
         </button>
         <h2 className="text-[22px] font-bold text-slate-900 tracking-tight">{selected?.label}</h2>
-        <p className="mt-1.5 text-[14px] text-slate-500">Fill in your details â leave blank to use placeholders.</p>
+        <p className="mt-1.5 text-[14px] text-slate-500">Fill in your details Ã¢ÂÂ leave blank to use placeholders.</p>
       </div>
 
       {/* Your details */}
@@ -298,7 +298,7 @@ export default function LetterGenerator() {
           <textarea
             value={details}
             onChange={e => setDetails(e.target.value)}
-            placeholder={DETAIL_PLACEHOLDERS[letterType] || 'Describe your situation in detailâ¦'}
+            placeholder={DETAIL_PLACEHOLDERS[letterType] || 'Describe your situation in detailÃ¢ÂÂ¦'}
             rows={4}
             className="w-full resize-none bg-transparent text-[14px] text-slate-800 placeholder-slate-300 focus:outline-none leading-relaxed"
           />
@@ -322,7 +322,7 @@ export default function LetterGenerator() {
         {loading ? (
           <>
             <SpinnerIcon size={16} />
-            <span>Writing your letterâ¦</span>
+            <span>Writing your letterÃ¢ÂÂ¦</span>
           </>
         ) : (
           <>
@@ -334,7 +334,7 @@ export default function LetterGenerator() {
     </form>
   )
 
-  /* ââ Step 3 â Letter display âââââââââââââââââââââââââââââââââââââââââââ */
+  /* Ã¢ÂÂÃ¢ÂÂ Step 3 Ã¢ÂÂ Letter display Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
   return (
     <div className="space-y-5 animate-slide-up">
 
@@ -344,7 +344,7 @@ export default function LetterGenerator() {
         <p className="mt-1.5 text-[14px] text-slate-500">Print, copy, or email to your landlord today.</p>
       </div>
 
-      {/* Action buttons â primary copy, secondary print/share */}
+      {/* Action buttons Ã¢ÂÂ primary copy, secondary print/share */}
       <div className="flex gap-2.5">
         <button onClick={handleCopy}
           className={`press-effect flex-1 flex items-center justify-center gap-1.5 rounded-xl px-3 py-3 text-[13px] font-semibold transition-all duration-200
@@ -394,7 +394,7 @@ export default function LetterGenerator() {
       {/* Disclaimer */}
       <div className="rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4">
         <p className="text-[11px] leading-relaxed text-slate-400">
-          <strong className="text-slate-500">General info only, not legal advice.</strong> Laws change â double-check with a local attorney or legal aid clinic.{' '}
+          <strong className="text-slate-500">General info only, not legal advice.</strong> Laws change Ã¢ÂÂ double-check with a local attorney or legal aid clinic.{' '}
           <span className="text-slate-300">Last updated May 2025.</span>
         </p>
       </div>
