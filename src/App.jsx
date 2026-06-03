@@ -17,7 +17,7 @@ function HowItWorks() {
     {
       num: '1',
       title: 'Pick your state & issues',
-      desc: 'Select what\'s happening — choose as many as apply to your situation.',
+      desc: 'Select what\'s happening â choose as many as apply to your situation.',
     },
     {
       num: '2',
